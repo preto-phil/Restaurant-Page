@@ -39,18 +39,24 @@ function headerMenu() {
   const headerDiv = document.getElementsByClassName('header');
   const headerMenu = document.createElement('div');
   headerMenu.classList.add('header-menu');
-  headerDiv.appendChild(headerMenu)
+  headerDiv.appendChild(headerMenu);
 
-
+  const menuBtn = document.createElement('button');
+  menuBtn.classList.add('menu-btn');
+  menuBtn.innerText = "Menu"
+  headerMenu.appendChild(menuBtn);
 }
 
 function headerAbout() {
   const headerDiv = document.getElementsByClassName('header');
   const headerAbout = document.createElement('div');
   headerAbout.classList.add('header-about');
-  headerDiv.appendChild(headerAbout)
+  headerDiv.appendChild(headerAbout);
 
-
+  const aboutBtn = document.createElement('button');
+  aboutBtn.classList.add('about-btn');
+  aboutBtn.innerText = "About"
+  headerAbout.appendChild(aboutBtn);
 }
 
 function headerContact() {
@@ -59,5 +65,8 @@ function headerContact() {
   headerContact.classList.add('header-contact');
   headerDiv.appendChild(headerContact)
 
-
+  const contactBtn = document.createElement('button');
+  contactBtn.classList.add('contact-btn');
+  contactBtn.innerText = "Contact"
+  headerContact.appendChild(contactBtn);
 }
