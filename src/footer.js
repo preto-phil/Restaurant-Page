@@ -4,7 +4,9 @@ export default function createFooter() {
   footerDiv.setAttribute('id', 'footer');
   contentDiv.appendChild(footerDiv);
 
+  footerOptions();
   footerMe();
+  footerText();
 }
 
 function footerMe() {
@@ -13,4 +15,20 @@ function footerMe() {
   footerMe.setAttribute('id', 'footer-me');
   footerMe.innerText = 'Created by preto-phil';
   footerDiv.appendChild(footerMe);
+}
+
+function footerText() {
+  const footerDiv = document.getElementById('footer');
+  const footerText = document.createElement('div');
+  footerText.setAttribute('id', 'footer-text');
+  footerText.innerText = 'Some text to be added here';
+  footerDiv.appendChild(footerText);
+}
+
+function footerOptions() {
+  const footerDiv = document.getElementById('footer');
+  const footerOptions = document.createElement('div');
+  footerOptions.setAttribute('id', 'footer-options');
+  footerOptions.innerText = 'Some other text to be added here';
+  footerDiv.appendChild(footerOptions);
 }

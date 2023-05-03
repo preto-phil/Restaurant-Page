@@ -19,7 +19,17 @@ function headerSign() {
 
   const signBtn = document.createElement('button');
   signBtn.setAttribute('id', 'sign-btn');
+
+  signBtn.addEventListener('click', () => {
+    const homeDiv = document.getElementById('home');
+    // set all other bodies display to none
+    homeDiv.style.display = 'grid';
+  });
+
   headerSign.appendChild(signBtn);
+
+  // Add event listener - if click hide home body (display = none) and toggle menu
+
 }
 
 function headerName() {
