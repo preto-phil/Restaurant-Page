@@ -1,72 +1,71 @@
 export default function createHeader() {
   const contentDiv = document.getElementById('content');
   const headerDiv = document.createElement('div');
-  headerDiv.classList.add('header');
+  headerDiv.setAttribute('id', 'header');
+  contentDiv.appendChild(headerDiv);
 
   headerSign();
   headerName();
   headerMenu();
   headerAbout();
   headerContact();
-
-  contentDiv.appendChild(headerDiv)
 }
 
 function headerSign() {
-  const headerDiv = document.getElementsByClassName('header');
+  const headerDiv = document.getElementById('header');
   const headerSign = document.createElement('div');
-  headerSign.classList.add('header-sign');
+  headerSign.setAttribute('id', 'header-sign');
   headerDiv.appendChild(headerSign);
 
   const signBtn = document.createElement('button');
-  signBtn.classList.add('sign-btn');
+  signBtn.setAttribute('id', 'sign-btn');
   headerSign.appendChild(signBtn);
 }
 
 function headerName() {
-  const headerDiv = document.getElementsByClassName('header');
+  const headerDiv = document.getElementById('header');
   const headerName = document.createElement('div');
-  headerName.classList.add('header-name');
+  headerName.setAttribute('id', 'header-name');
   headerDiv.appendChild(headerName);
 
   const nameBtn = document.createElement('button');
-  nameBtn.classList.add('name-btn');
+  nameBtn.setAttribute('id', 'name-btn');
   nameBtn.innerText = "The Three Broomsticks"
   headerName.appendChild(nameBtn);
 }
 
 function headerMenu() {
-  const headerDiv = document.getElementsByClassName('header');
+  const headerDiv = document.getElementById('header');
   const headerMenu = document.createElement('div');
-  headerMenu.classList.add('header-menu');
+  headerMenu.setAttribute('id', 'header-menu');
   headerDiv.appendChild(headerMenu);
 
   const menuBtn = document.createElement('button');
-  menuBtn.classList.add('menu-btn');
+  menuBtn.setAttribute('id', 'menu-btn');
   menuBtn.innerText = "Menu"
   headerMenu.appendChild(menuBtn);
 }
 
 function headerAbout() {
-  const headerDiv = document.getElementsByClassName('header');
+  const headerDiv = document.getElementById('header');
   const headerAbout = document.createElement('div');
-  headerAbout.classList.add('header-about');
+  headerAbout.setAttribute('id', 'header-about');
   headerDiv.appendChild(headerAbout);
 
   const aboutBtn = document.createElement('button');
-  aboutBtn.classList.add('about-btn');
+  aboutBtn.setAttribute('id', 'about-btn');
   aboutBtn.innerText = "About"
   headerAbout.appendChild(aboutBtn);
 }
 
 function headerContact() {
-  const headerDiv = document.getElementsByClassName('header');
+  const headerDiv = document.getElementById('header');
   const headerContact = document.createElement('div');
-  headerContact.classList.add('header-contact');
+  headerContact.setAttribute('id', 'header-contact');
   headerDiv.appendChild(headerContact)
 
   const contactBtn = document.createElement('button');
-  contactBtn.classList.add('contact-btn');
+  contactBtn.setAttribute('id', 'contact-btn');
   contactBtn.innerText = "Contact"
   headerContact.appendChild(contactBtn);
 }
