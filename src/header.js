@@ -42,6 +42,12 @@ function headerName() {
   nameBtn.setAttribute('id', 'name-btn');
   nameBtn.innerText = "The Three Broomsticks"
   headerName.appendChild(nameBtn);
+
+  nameBtn.addEventListener('click', () => {
+    const homeDiv = document.getElementById('home');
+    // set all other bodies display to none
+    homeDiv.style.display = 'grid';
+  });
 }
 
 function headerMenu() {
@@ -53,6 +59,14 @@ function headerMenu() {
   const menuBtn = document.createElement('button');
   menuBtn.setAttribute('id', 'menu-btn');
   menuBtn.innerText = "Menu"
+
+  menuBtn.addEventListener('click', () => {
+    const homeDiv = document.getElementById('home');
+    // Home and all other bodies display to none
+    homeDiv.style.display = 'none';
+    // Set menu display to grid
+  });
+
   headerMenu.appendChild(menuBtn);
 }
 
@@ -65,6 +79,14 @@ function headerAbout() {
   const aboutBtn = document.createElement('button');
   aboutBtn.setAttribute('id', 'about-btn');
   aboutBtn.innerText = "About"
+
+  aboutBtn.addEventListener('click', () => {
+    const homeDiv = document.getElementById('home');
+    // Home and all other bodies display to none
+    homeDiv.style.display = 'none';
+    // Set about display to grid
+  });
+
   headerAbout.appendChild(aboutBtn);
 }
 
@@ -77,5 +99,13 @@ function headerContact() {
   const contactBtn = document.createElement('button');
   contactBtn.setAttribute('id', 'contact-btn');
   contactBtn.innerText = "Contact"
+
+  contactBtn.addEventListener('click', () => {
+    const homeDiv = document.getElementById('home');
+    // Home and all other bodies display to none
+    homeDiv.style.display = 'none';
+    // Set contact display to grid
+  });
+
   headerContact.appendChild(contactBtn);
 }
