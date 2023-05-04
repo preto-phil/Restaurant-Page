@@ -61,3 +61,8 @@ function menuDrinks() {
   drinks.innerText = "Drinks";
   menuDiv.appendChild(drinks);
 }
+
+export function hideMenu() {
+  const menuDiv = document.getElementById('menu');
+  menuDiv.style.display = 'none';
+}

@@ -1,3 +1,6 @@
+import createMenu from "./menu";
+import { hideMenu } from "./menu"; 
+
 export default function createHeader() {
   const contentDiv = document.getElementById('content');
   const headerDiv = document.createElement('div');
@@ -19,10 +22,12 @@ function headerSign() {
 
   const signBtn = document.createElement('button');
   signBtn.setAttribute('id', 'sign-btn');
+  signBtn.innerText = 'Logo';
 
   signBtn.addEventListener('click', () => {
     const homeDiv = document.getElementById('home');
     // set all other bodies display to none
+    hideMenu();
     homeDiv.style.display = 'grid';
   });
 
@@ -46,6 +51,7 @@ function headerName() {
   nameBtn.addEventListener('click', () => {
     const homeDiv = document.getElementById('home');
     // set all other bodies display to none
+    hideMenu();
     homeDiv.style.display = 'grid';
   });
 }
@@ -65,6 +71,7 @@ function headerMenu() {
     // Home and all other bodies display to none
     homeDiv.style.display = 'none';
     // Set menu display to grid
+    createMenu();
   });
 
   headerMenu.appendChild(menuBtn);
