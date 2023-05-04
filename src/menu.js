@@ -1,6 +1,3 @@
-import createHeader from "./header";
-import createFooter from "./footer";
-
 export default function createMenu() {
   const contentDiv = document.getElementById('content');
   const menuDiv = document.createElement('div');
@@ -9,6 +6,10 @@ export default function createMenu() {
 
   menuHeader();
   menuBreakfast();
+  menuLightMeals();
+  menuMains();
+  menuDesserts();
+  menuDrinks();
 
 }
 
@@ -27,4 +28,36 @@ function menuBreakfast() {
   breakfast.setAttribute('id', 'menu-breakfast');
   breakfast.innerText = "Breakfast";
   menuDiv.appendChild(breakfast);
+}
+
+function menuLightMeals() {
+  const menuDiv = document.getElementById('menu');
+  const lightMeals = document.createElement('div');
+  lightMeals.setAttribute('id', 'menu-light-meals');
+  lightMeals.innerText = "Light Meals";
+  menuDiv.appendChild(lightMeals);
+}
+
+function menuMains() {
+  const menuDiv = document.getElementById('menu');
+  const mainCourses = document.createElement('div');
+  mainCourses.setAttribute('id', 'menu-mains');
+  mainCourses.innerText = "Main Courses";
+  menuDiv.appendChild(mainCourses);
+}
+
+function menuDesserts() {
+  const menuDiv = document.getElementById('menu');
+  const desserts = document.createElement('div');
+  desserts.setAttribute('id', 'menu-desserts');
+  desserts.innerText = "Desserts";
+  menuDiv.appendChild(desserts);
+}
+
+function menuDrinks() {
+  const menuDiv = document.getElementById('menu');
+  const drinks = document.createElement('div');
+  drinks.setAttribute('id', 'menu-drinks');
+  drinks.innerText = "Drinks";
+  menuDiv.appendChild(drinks);
 }
