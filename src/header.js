@@ -1,4 +1,4 @@
-import createMenu from "./menu";
+import { hideHome } from "./home";
 import { hideMenu } from "./menu"; 
 
 export default function createHeader() {
@@ -68,10 +68,11 @@ function headerMenu() {
 
   menuBtn.addEventListener('click', () => {
     const homeDiv = document.getElementById('home');
+    const menuDiv = document.getElementById('menu');
     // Home and all other bodies display to none
-    homeDiv.style.display = 'none';
+    hideHome();
     // Set menu display to grid
-    createMenu();
+    menuDiv.style.display = 'grid';
   });
 
   headerMenu.appendChild(menuBtn);

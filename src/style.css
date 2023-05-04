@@ -164,8 +164,8 @@ body {
   align-items: center;
 }
 
-#menu-mains {
-  grid-area: 2 / 3 / 3 / 4;
+#menu-drinks {
+  grid-area: 2 / 3 / 4 / 4;
 
   display: flex;
   justify-content: center;

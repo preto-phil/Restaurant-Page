@@ -2,6 +2,7 @@ export default function createMenu() {
   const contentDiv = document.getElementById('content');
   const menuDiv = document.createElement('div');
   menuDiv.setAttribute('id', 'menu');
+  menuDiv.style.display = 'none';
   contentDiv.appendChild(menuDiv);
 
   menuHeader();

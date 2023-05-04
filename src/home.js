@@ -34,3 +34,8 @@ function rightHomePage() {
   homeRight.innerText = 'Student Specials';
   homeDiv.appendChild(homeRight);
 }
+
+export function hideHome() {
+  const homeDiv = document.getElementById('home');
+  homeDiv.style.display = 'none';
+}
