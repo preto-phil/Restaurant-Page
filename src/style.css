@@ -32,6 +32,20 @@ body {
   color: #e7e5e4;
 }
 
+#header button {
+  background-color: #44403c;
+  color: #e7e5e4;
+
+  cursor: pointer;
+
+  padding: 50px;
+
+  font-size: 5rem;
+  font-weight: 500;
+
+  border: 3px solid whitesmoke;
+}
+
 #header-sign {
   grid-area: 1 / 1 / 2 / 2;
 
@@ -73,6 +87,14 @@ body {
 }
 
 
+#home,
+#menu,
+#about,
+#contact {
+  background: url('./body-photo.png');
+  background-repeat: none;
+  background-size: 100% 100%;
+}
 
 
 
@@ -83,7 +105,6 @@ body {
   grid-template-rows: 1fr 4fr;
   grid-template-columns: repeat(2, 1fr);
 
-  background-color: #78716c;
   color: #292524;
 }
 
@@ -93,6 +114,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 5rem;
+  color: whitesmoke;
 }
 
 #home-left {
@@ -101,6 +125,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 5rem;
+  color: whitesmoke;
+
 }
 
 #home-right {
@@ -109,6 +137,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 5rem;
+  color: whitesmoke;
+
 }
 
 
@@ -264,13 +296,4 @@ body {
   align-items: center;
 
   padding-right: 20px;
-}
-
-#home,
-#menu,
-#about,
-#contact {
-  background: url('./body-photo.png');
-  background-repeat: none;
-  background-size: 100% 100%;
 }
