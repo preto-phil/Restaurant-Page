@@ -351,9 +351,39 @@ body {
 #footer-me {
   grid-area: 1 / 2 / 2 / 3;
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#footer-created {
+  grid-area: 1 / 1 / 2 / 2;
+  
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+}
+
+#footer-icon {
+  grid-area: 1 / 2 / 2 / 3;
+  
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#footer-btn {
+  height: 70%;
+  width: 30%;
+  
+  background: url('./gh-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  border: none;
+}
+
+#footer-btn:hover {
+  height: 80%;
 }
 
 #footer-text {

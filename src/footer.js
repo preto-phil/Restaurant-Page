@@ -13,7 +13,21 @@ function footerMe() {
   const footerDiv = document.getElementById('footer');
   const footerMe = document.createElement('div');
   footerMe.setAttribute('id', 'footer-me');
-  footerMe.innerText = 'Created by preto-phil';
+
+  const footerCreated = document.createElement('div');
+  footerCreated.setAttribute('id', 'footer-created');
+  footerCreated.innerText = 'Created by preto-phil';
+  footerMe.appendChild(footerCreated);
+
+  const footerIcon = document.createElement('div');
+  footerIcon.setAttribute('id', 'footer-icon');
+  footerIcon.innerText = '';
+  footerMe.appendChild(footerIcon);
+
+  const footerBtn = document.createElement('button');
+  footerBtn.setAttribute('id', 'footer-btn');
+  footerIcon.appendChild(footerBtn);
+
   footerDiv.appendChild(footerMe);
 }
 
