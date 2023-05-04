@@ -1,5 +1,3 @@
-// Import page for each different menu
-
 export default function createHomePage() {
   const contentDiv = document.getElementById('content');
   const homeDiv = document.createElement('div');
