@@ -1,5 +1,6 @@
 import { hideHome } from "./home";
 import { hideMenu } from "./menu"; 
+import { hideAbout } from "./about";
 
 export default function createHeader() {
   const contentDiv = document.getElementById('content');
@@ -23,18 +24,15 @@ function headerSign() {
   const signBtn = document.createElement('button');
   signBtn.setAttribute('id', 'sign-btn');
   signBtn.innerText = 'Logo';
+  headerSign.appendChild(signBtn);
 
   signBtn.addEventListener('click', () => {
     const homeDiv = document.getElementById('home');
     // set all other bodies display to none
     hideMenu();
+    hideAbout();
     homeDiv.style.display = 'grid';
-  });
-
-  headerSign.appendChild(signBtn);
-
-  // Add event listener - if click hide home body (display = none) and toggle menu
-
+  }); 
 }
 
 function headerName() {
@@ -50,8 +48,8 @@ function headerName() {
 
   nameBtn.addEventListener('click', () => {
     const homeDiv = document.getElementById('home');
-    // set all other bodies display to none
     hideMenu();
+    hideAbout();
     homeDiv.style.display = 'grid';
   });
 }
@@ -64,18 +62,15 @@ function headerMenu() {
 
   const menuBtn = document.createElement('button');
   menuBtn.setAttribute('id', 'menu-btn');
-  menuBtn.innerText = "Menu"
+  menuBtn.innerText = "Menu";
+  headerMenu.appendChild(menuBtn);
 
   menuBtn.addEventListener('click', () => {
-    const homeDiv = document.getElementById('home');
     const menuDiv = document.getElementById('menu');
-    // Home and all other bodies display to none
     hideHome();
-    // Set menu display to grid
+    hideAbout();
     menuDiv.style.display = 'grid';
   });
-
-  headerMenu.appendChild(menuBtn);
 }
 
 function headerAbout() {
@@ -86,16 +81,17 @@ function headerAbout() {
 
   const aboutBtn = document.createElement('button');
   aboutBtn.setAttribute('id', 'about-btn');
-  aboutBtn.innerText = "About"
+  aboutBtn.innerText = "About";
+  headerAbout.appendChild(aboutBtn);
+
 
   aboutBtn.addEventListener('click', () => {
-    const homeDiv = document.getElementById('home');
-    // Home and all other bodies display to none
-    homeDiv.style.display = 'none';
-    // Set about display to grid
-  });
+    const aboutDiv = document.getElementById('about');
+    hideHome();
+    hideMenu();
+    aboutDiv.style.display = 'grid';
 
-  headerAbout.appendChild(aboutBtn);
+  });
 }
 
 function headerContact() {
@@ -106,7 +102,8 @@ function headerContact() {
 
   const contactBtn = document.createElement('button');
   contactBtn.setAttribute('id', 'contact-btn');
-  contactBtn.innerText = "Contact"
+  contactBtn.innerText = "Contact";
+  headerContact.appendChild(contactBtn);
 
   contactBtn.addEventListener('click', () => {
     const homeDiv = document.getElementById('home');
@@ -114,6 +111,4 @@ function headerContact() {
     homeDiv.style.display = 'none';
     // Set contact display to grid
   });
-
-  headerContact.appendChild(contactBtn);
 }
