@@ -27,6 +27,9 @@ function footerMe() {
   const footerBtn = document.createElement('button');
   footerBtn.setAttribute('id', 'footer-btn');
   footerIcon.appendChild(footerBtn);
+  footerBtn.addEventListener('click', () => {
+    window.open('https://github.com/preto-phil');
+  });
 
   footerDiv.appendChild(footerMe);
 }

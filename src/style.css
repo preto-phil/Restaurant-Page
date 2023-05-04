@@ -375,6 +375,8 @@ body {
   height: 70%;
   width: 30%;
   
+  cursor: pointer;
+  
   background: url('./gh-icon.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
