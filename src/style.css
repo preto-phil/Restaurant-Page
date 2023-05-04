@@ -11,9 +11,7 @@
 }
 
 button {
-  font-size: 8rem;
   font-family: 'MyFont';
-  font-weight: 700;
 }
 
 body {
@@ -31,7 +29,7 @@ body {
   height: 100%;
   
   display: grid;
-  grid-template-rows: 1fr 10fr 0.5fr;
+  grid-template-rows: 1.1fr 10fr 0.7fr;
 }
 
 
@@ -80,6 +78,11 @@ body {
   font-weight: 800;
 }
 
+#name-btn:hover {
+  font-size: 8.2rem;
+  color: #bbb7b5;
+}
+
 #menu-btn,
 #about-btn,
 #contact-btn {
@@ -91,6 +94,7 @@ body {
 #about-btn:hover,
 #contact-btn:hover {
   font-size: 6.5rem;
+  color: #bbb7b5;
 }
 
 #header-name {
@@ -330,7 +334,7 @@ body {
   background-color: #44403c;
   color: #e7e5e4;
 
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 500;
 }
 
@@ -341,7 +345,7 @@ body {
   justify-content: start;
   align-items: center;
 
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 #footer-me {
@@ -359,5 +363,5 @@ body {
   justify-content: end;
   align-items: center;
 
-  padding-right: 20px;
+  padding-right: 50px;
 }
