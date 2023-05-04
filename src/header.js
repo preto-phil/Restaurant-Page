@@ -1,6 +1,7 @@
 import { hideHome } from "./home";
 import { hideMenu } from "./menu"; 
 import { hideAbout } from "./about";
+import { hideContact } from "./contact";
 
 export default function createHeader() {
   const contentDiv = document.getElementById('content');
@@ -31,6 +32,7 @@ function headerSign() {
     // set all other bodies display to none
     hideMenu();
     hideAbout();
+    hideContact();
     homeDiv.style.display = 'grid';
   }); 
 }
@@ -50,6 +52,7 @@ function headerName() {
     const homeDiv = document.getElementById('home');
     hideMenu();
     hideAbout();
+    hideContact();
     homeDiv.style.display = 'grid';
   });
 }
@@ -69,6 +72,7 @@ function headerMenu() {
     const menuDiv = document.getElementById('menu');
     hideHome();
     hideAbout();
+    hideContact();
     menuDiv.style.display = 'grid';
   });
 }
@@ -89,8 +93,8 @@ function headerAbout() {
     const aboutDiv = document.getElementById('about');
     hideHome();
     hideMenu();
+    hideContact();
     aboutDiv.style.display = 'grid';
-
   });
 }
 
@@ -106,9 +110,10 @@ function headerContact() {
   headerContact.appendChild(contactBtn);
 
   contactBtn.addEventListener('click', () => {
-    const homeDiv = document.getElementById('home');
-    // Home and all other bodies display to none
-    homeDiv.style.display = 'none';
-    // Set contact display to grid
+    const contactDiv = document.getElementById('contact');
+    hideHome();
+    hideMenu();
+    hideAbout();
+    contactDiv.style.display = 'grid';
   });
 }
