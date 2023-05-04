@@ -265,3 +265,12 @@ body {
 
   padding-right: 20px;
 }
+
+#home,
+#menu,
+#about,
+#contact {
+  background: url('./body-photo.png');
+  background-repeat: none;
+  background-size: 100% 100%;
+}
