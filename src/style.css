@@ -113,6 +113,68 @@ body {
 
 
 
+#menu {
+  grid-area: 2 / 1 / 3 / 2;
+
+  display: grid;
+  grid-template-rows: 1fr  6fr 3fr;
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: #78716c;
+  color: #292524;
+}
+
+#menu-header {
+  grid-area: 1 / 1 / 2 / 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-breakfast {
+  grid-area: 2 / 1 / 3 / 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-light-meals {
+  grid-area: 3 / 1 / 4 / 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-mains {
+  grid-area: 2 / 2 / 3 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-desserts {
+  grid-area: 3 / 2 / 4 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-mains {
+  grid-area: 2 / 3 / 3 / 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 
 #footer {
   grid-area: 3 / 1 / 4 / 2;
