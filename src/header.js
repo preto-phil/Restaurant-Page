@@ -24,7 +24,7 @@ function headerSign() {
 
   const signBtn = document.createElement('button');
   signBtn.setAttribute('id', 'sign-btn');
-  signBtn.innerText = 'Logo';
+  signBtn.innerText = '';
   headerSign.appendChild(signBtn);
 
   signBtn.addEventListener('click', () => {
