@@ -2,7 +2,7 @@
   font-family: 'MyFont';
   src: url('./CaslonAntique.ttf') format('truetype'),
     url('./CaslonAntique-Bold.ttf') format('truetype');
-  font-weight: 800;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -51,7 +51,7 @@ body {
 
   cursor: pointer;
   border: none;
-  padding: 50px;
+  padding: 20px;
 }
 
 #header-sign {
@@ -74,26 +74,26 @@ body {
 }
 
 #name-btn {
-  font-size: 8rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0px;
 }
 
 #name-btn:hover {
-  font-size: 8.2rem;
   color: #bbb7b5;
 }
 
 #menu-btn,
 #about-btn,
 #contact-btn {
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 
 #menu-btn:hover,
 #about-btn:hover,
 #contact-btn:hover {
-  font-size: 6.5rem;
+  font-size: 2.2rem;
   color: #bbb7b5;
 }
 
@@ -156,7 +156,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -167,7 +167,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 
 }
@@ -179,7 +179,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 
 }
@@ -201,7 +201,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -212,7 +212,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -223,7 +223,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -234,7 +234,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -245,7 +245,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -256,7 +256,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -275,7 +275,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -286,7 +286,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -297,7 +297,7 @@ body {
   display: grid;
   grid-template-rows: 1fr  9fr;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -308,7 +308,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -319,7 +319,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 5rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -334,7 +334,7 @@ body {
   background-color: #44403c;
   color: #e7e5e4;
 
-  font-size: 5rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -376,7 +376,7 @@ body {
   width: 30%;
   
   cursor: pointer;
-  
+
   background: url('./gh-icon.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
