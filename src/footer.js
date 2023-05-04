@@ -9,6 +9,14 @@ export default function createFooter() {
   footerText();
 }
 
+function footerOptions() {
+  const footerDiv = document.getElementById('footer');
+  const footerOptions = document.createElement('div');
+  footerOptions.setAttribute('id', 'footer-options');
+  footerOptions.innerText = 'Some text to be added here';
+  footerDiv.appendChild(footerOptions);
+}
+
 function footerMe() {
   const footerDiv = document.getElementById('footer');
   const footerMe = document.createElement('div');
@@ -38,14 +46,6 @@ function footerText() {
   const footerDiv = document.getElementById('footer');
   const footerText = document.createElement('div');
   footerText.setAttribute('id', 'footer-text');
-  footerText.innerText = 'Some text to be added here';
+  footerText.innerText = 'Some other text to be added here';
   footerDiv.appendChild(footerText);
-}
-
-function footerOptions() {
-  const footerDiv = document.getElementById('footer');
-  const footerOptions = document.createElement('div');
-  footerOptions.setAttribute('id', 'footer-options');
-  footerOptions.innerText = 'Some other text to be added here';
-  footerDiv.appendChild(footerOptions);
 }
