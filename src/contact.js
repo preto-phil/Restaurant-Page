@@ -13,7 +13,7 @@ function contactHeader() {
   const contactDiv = document.getElementById('contact');
   const contactHeader = document.createElement('div');
   contactHeader.setAttribute('id', 'contact-header');
-  contactHeader.innerText = "Contact";
+  contactHeader.innerText = "CONTACT";
   contactDiv.appendChild(contactHeader);
 }
 
