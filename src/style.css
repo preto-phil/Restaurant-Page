@@ -184,12 +184,11 @@ body {
   grid-area: 2 / 1 / 3 / 2;
 
   display: grid;
-  grid-template-rows: 2fr  5fr 3fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 8fr;
 }
 
 #menu-header {
-  grid-area: 1 / 1 / 2 / 4;
+  grid-area: 1 / 1 / 2 / 2;
 
   display: flex;
   justify-content: center;
@@ -198,44 +197,50 @@ body {
   font-size: 3rem;
 }
 
-#menu-breakfast {
+#menu-content {
   grid-area: 2 / 1 / 3 / 2;
 
+
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+
+  width: 60%;
+  height: auto;
+  padding: 40px;
+  background-color: rgb(0, 0, 0, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#menu-breakfast,
+#menu-light-meals,
+#menu-mains,
+#menu-desserts,
+#menu-drinks {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#menu-breakfast {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 #menu-light-meals {
-  grid-area: 3 / 1 / 4 / 2;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: 2 / 1 / 3 / 2;
 }
 
 #menu-mains {
-  grid-area: 2 / 2 / 3 / 3;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: 3 / 1 / 4 / 2;
 }
 
 #menu-desserts {
-  grid-area: 3 / 2 / 4 / 3;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: 4 / 1 / 5 / 2;
 }
 
 #menu-drinks {
-  grid-area: 2 / 3 / 4 / 4;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: 5 / 1 / 6 / 2;
 }
 
 

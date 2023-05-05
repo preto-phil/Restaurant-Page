@@ -6,12 +6,7 @@ export default function createMenu() {
   contentDiv.appendChild(menuDiv);
 
   menuHeader();
-  menuBreakfast();
-  menuLightMeals();
-  menuMains();
-  menuDesserts();
-  menuDrinks();
-
+  menuContent();
 }
 
 function menuHeader() {
@@ -23,44 +18,57 @@ function menuHeader() {
 }
 
 
-function menuBreakfast() {
+function menuContent() {
   const menuDiv = document.getElementById('menu');
+  const menuContent = document.createElement('div');
+  menuContent.setAttribute('id', 'menu-content');
+  menuDiv.appendChild(menuContent);
+
+  menuBreakfast();
+  menuLightMeals();
+  menuMains();
+  menuDesserts();
+  menuDrinks();
+}
+
+function menuBreakfast() {
+  const menuContent = document.getElementById('menu-content');
   const breakfast = document.createElement('div');
   breakfast.setAttribute('id', 'menu-breakfast');
   breakfast.innerText = "Breakfast";
-  menuDiv.appendChild(breakfast);
+  menuContent.appendChild(breakfast);
 }
 
 function menuLightMeals() {
-  const menuDiv = document.getElementById('menu');
+  const menuContent = document.getElementById('menu-content');
   const lightMeals = document.createElement('div');
   lightMeals.setAttribute('id', 'menu-light-meals');
   lightMeals.innerText = "Light Meals";
-  menuDiv.appendChild(lightMeals);
+  menuContent.appendChild(lightMeals);
 }
 
 function menuMains() {
-  const menuDiv = document.getElementById('menu');
+  const menuContent = document.getElementById('menu-content');
   const mainCourses = document.createElement('div');
   mainCourses.setAttribute('id', 'menu-mains');
   mainCourses.innerText = "Main Courses";
-  menuDiv.appendChild(mainCourses);
+  menuContent.appendChild(mainCourses);
 }
 
 function menuDesserts() {
-  const menuDiv = document.getElementById('menu');
+  const menuContent = document.getElementById('menu-content');
   const desserts = document.createElement('div');
   desserts.setAttribute('id', 'menu-desserts');
   desserts.innerText = "Desserts";
-  menuDiv.appendChild(desserts);
+  menuContent.appendChild(desserts);
 }
 
 function menuDrinks() {
-  const menuDiv = document.getElementById('menu');
+  const menuContent = document.getElementById('menu-content');
   const drinks = document.createElement('div');
   drinks.setAttribute('id', 'menu-drinks');
   drinks.innerText = "Drinks";
-  menuDiv.appendChild(drinks);
+  menuContent.appendChild(drinks);
 }
 
 export function hideMenu() {
