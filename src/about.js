@@ -13,7 +13,7 @@ function aboutHeader() {
   const aboutDiv = document.getElementById('about');
   const aboutHeader = document.createElement('div');
   aboutHeader.setAttribute('id', 'about-header');
-  aboutHeader.innerText = "About";
+  aboutHeader.innerText = "ABOUT";
   aboutDiv.appendChild(aboutHeader);
 }
 
@@ -22,8 +22,17 @@ function aboutBody() {
   const aboutDiv = document.getElementById('about');
   const aboutBody = document.createElement('div');
   aboutBody.setAttribute('id', 'about-body');
-  aboutBody.innerText = "A brief history of the three broomsticks...";
   aboutDiv.appendChild(aboutBody);
+
+  aboutContent();
+}
+
+function aboutContent() {
+  const aboutBody = document.getElementById('about-body');
+  const aboutContentDiv = document.createElement('div');
+  aboutContentDiv.setAttribute('id', 'about-content');
+  aboutContentDiv.innerText = "A brief history of the three broomsticks...";
+  aboutBody.appendChild(aboutContentDiv);
 }
 
 export function hideAbout() {
