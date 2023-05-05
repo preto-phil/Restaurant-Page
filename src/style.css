@@ -277,7 +277,9 @@ body {
 
 #about-content-header,
 #about-content-P1,
-#about-content-P2 {
+#about-content-P2,
+#contact-content-P1,
+#contact-content-P2  {
   padding-bottom: 20px;
 }
 
@@ -305,7 +307,23 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+}
+
+#contact-content {
+  width: 60%;
+  height: auto;
+  padding: 40px;
+
+  background-color: rgb(0, 0, 0, 0.7);
+
+  margin-bottom: 50px;
+}
+
+#contact-content-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 
 
